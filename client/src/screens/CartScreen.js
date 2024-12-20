@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {addToCart,removeFromCart} from '../js/actions/cartAction';
 
  function CartScreen(props) {
-    const cart = useSelector(state => state.cartReducer);
+    const cart = useSelector(state => state.cart);
     const { cartItems } = cart;
     const dispatch = useDispatch();
     const productId = props.match.params.id;

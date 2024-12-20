@@ -15,6 +15,9 @@ const update = ({ userId, name, email, password }) => async (dispatch, getState)
      /* headers: {
         Authorization: 'Bearer ' + userInfo.token
       }*/
+      headers: {
+        authorization: localStorage.getItem("token"),
+      },
     });
     dispatch({ type: USER_UPDATE_SUCCESS, payload: data });
     //Cookie.set('userInfo', JSON.stringify(data));

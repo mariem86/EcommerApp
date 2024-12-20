@@ -14,6 +14,7 @@ import PaymentScreen from './screens/PaymentScreen';
 import OrdersScreen from './screens/OrdersScreen';
 import OrderScreen from './screens/orderScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
+import ProfileScreen from './screens/ProfileScreen';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
         <header className="header">
           <div className="brand">
             <button onClick={openMenu}>&#9776;</button>
-            <Link to="/">amazona</Link>
+            <Link to="/">Mytalorzone By Sahiba</Link>
           </div>
           <div className="header-links">
             <a href="cart.html">Cart</a>
@@ -74,6 +75,7 @@ function App() {
           <div className="content">
             
             <Route path="/signin" component={SigninScreen} />
+            <Route path="/profile" component={ProfileScreen} />
             <Route path="/register" component={RegisterScreen} />
             <Route path="/orders" component={OrdersScreen} />
             <Route path="/order/:id" component={OrderScreen} />

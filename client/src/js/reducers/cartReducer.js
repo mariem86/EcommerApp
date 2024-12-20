@@ -23,4 +23,4 @@ function cartReducer(state = { cartItems: [] }, action) {
             return state
     }}
     
-        export{cartReducer}
+        export default cartReducer
